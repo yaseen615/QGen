@@ -1,4 +1,4 @@
-# QGen - Question Paper Generator
+# QGen - NEET/JEE Question Bank
 
 <div align="center">
 
@@ -7,9 +7,9 @@
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 ![Platform](https://img.shields.io/badge/Platform-Cross%20Platform-blueviolet?style=for-the-badge)
 
-**A powerful cross-platform Flutter application for creating, managing, and generating professional question papers with LaTeX support.**
+**A powerful cross-platform Flutter application for creating, managing, and generating professional question papers for NEET, JEE, and Class 11/12 examinations with LaTeX support.**
 
-[Features](#-features) • [Installation](#-installation) • [Usage](#-usage) • [Screenshots](#-screenshots) • [Tech Stack](#-tech-stack) • [Contributing](#-contributing)
+[Features](#-features) • [Installation](#-installation) • [Usage](#-usage) • [Syllabus](#-syllabus-coverage) • [Tech Stack](#-tech-stack) • [Contributing](#-contributing)
 
 </div>
 
@@ -17,9 +17,19 @@
 
 ## 📋 Overview
 
-QGen (Question Generator) is a comprehensive desktop application designed for educators, teachers, and educational institutions to streamline the process of creating question papers. Built with Flutter, it offers a modern, intuitive interface with support for mathematical equations using LaTeX notation.
+QGen is a comprehensive question bank and paper generator specifically designed for **NEET**, **JEE (Main & Advanced)**, and **Class 11/12 (+1/+2)** competitive exam preparation. Built with Flutter, it offers a modern, intuitive interface with full support for mathematical equations using LaTeX notation.
 
-Whether you're a teacher preparing weekly tests or an institution generating standardized examinations, QGen provides all the tools you need to create professional-quality question papers in minutes.
+Whether you're a coaching institute preparing mock tests, a teacher creating chapter-wise assessments, or a student organizing practice questions, QGen provides all the tools you need to create professional-quality question papers following the official NEET/JEE exam patterns.
+
+### 🎯 Target Examinations
+
+| Exam              | Subjects Covered                            |
+| ----------------- | ------------------------------------------- |
+| **NEET**          | Physics, Chemistry, Biology                 |
+| **JEE Main**      | Physics, Chemistry, Mathematics             |
+| **JEE Advanced**  | Physics, Chemistry, Mathematics             |
+| **+1 (Class 11)** | All subjects with chapter-wise organization |
+| **+2 (Class 12)** | All subjects with chapter-wise organization |
 
 ---
 
@@ -27,30 +37,30 @@ Whether you're a teacher preparing weekly tests or an institution generating sta
 
 ### 📝 Question Management
 
-- **Create Questions** - Add questions with full LaTeX support for mathematical expressions
-- **Multiple Question Types** - Support for MCQ, Short Answer, Long Answer, and Fill in the Blanks
+- **Create Questions** - Add questions with full LaTeX support for mathematical expressions, chemical equations, and scientific notation
+- **Multiple Question Types** - MCQ, Numerical Value, Assertion-Reasoning, Short Answer, Long Answer, Fill in Blanks
 - **Difficulty Levels** - Categorize questions as Easy, Medium, or Hard
-- **Marks Assignment** - Assign marks to each question for accurate paper totaling
+- **NEET/JEE Marking Scheme** - Default 4 marks per MCQ with negative marking support
 - **Edit & Delete** - Full CRUD operations on your question bank
 
-### 📚 Subject & Chapter Organization
+### 📚 Complete Syllabus Coverage
 
-- **Subject Management** - Create and manage multiple subjects
-- **Chapter-wise Organization** - Organize questions by chapters within each subject
-- **Pre-configured Subjects** - Comes with default subjects (Mathematics, Physics, Chemistry, Biology) with standard chapters
-- **Custom Subjects** - Add your own subjects and chapters as needed
+- **Physics** - 29 chapters covering Class 11 & 12 (Mechanics to Modern Physics)
+- **Chemistry** - 29 chapters covering Physical, Organic & Inorganic Chemistry
+- **Biology** - 38 chapters covering Botany & Zoology (NEET specific)
+- **Mathematics** - 27 chapters covering Algebra to Calculus (JEE specific)
 
 ### 📄 Paper Generation
 
+- **NEET/JEE Pattern** - Generate papers following official exam patterns
 - **Automatic Selection** - Auto-select questions based on total marks requirement
 - **Manual Selection** - Hand-pick specific questions for your paper
-- **Customizable Headers** - Set institution name, exam title, date, and duration
-- **Section-wise Organization** - Questions are automatically organized by type
+- **Section-wise Organization** - Questions organized by Physics, Chemistry, Biology/Maths
 - **PDF Export** - Generate professional PDF papers with proper formatting
 
 ### 🎨 Modern User Interface
 
-- **Dark Theme** - Eye-friendly dark theme for extended usage
+- **Dark Theme** - Eye-friendly dark theme for extended study sessions
 - **Sidebar Navigation** - Quick access to all features via collapsible sidebar
 - **Dashboard Statistics** - View question counts, subject distribution at a glance
 - **Responsive Design** - Works seamlessly on different screen sizes
@@ -120,17 +130,18 @@ flutter run -d chrome
 ### 1. Adding Questions
 
 1. Navigate to **Create Question** from the sidebar
-2. Select the subject and chapter
-3. Choose the question type (MCQ, Short Answer, Long Answer, Fill in Blanks)
-4. Enter the question content (supports LaTeX for math expressions)
-5. Set difficulty level and marks
-6. For MCQ: Add options and select the correct answer
-7. Click **Save Question**
+2. Select the subject (Physics/Chemistry/Biology/Mathematics)
+3. Choose the chapter from the NEET/JEE syllabus
+4. Select question type (MCQ, Numerical, Assertion-Reasoning, etc.)
+5. Enter the question content (supports LaTeX for math/chemical equations)
+6. Set difficulty level and marks (default: 4 marks for MCQ)
+7. For MCQ: Add 4 options and select the correct answer
+8. Click **Save Question**
 
 ### 2. Managing Question Bank
 
 1. Go to **Question Bank** from the sidebar
-2. Use filters to find specific questions by subject, chapter, or type
+2. Filter by subject, chapter, question type, or difficulty
 3. Click on any question to view, edit, or delete it
 4. Use the search functionality for quick access
 
@@ -138,9 +149,10 @@ flutter run -d chrome
 
 1. Navigate to **Generate Paper** from the sidebar
 2. Configure paper settings:
-   - Institution name
-   - Exam title and date
-   - Duration and total marks
+   - Institution/Coaching name
+   - Exam type (NEET/JEE Mock Test)
+   - Date and duration
+   - Total marks
 3. Choose selection mode:
    - **Auto Select**: System picks questions to match total marks
    - **Manual Select**: Hand-pick questions from your bank
@@ -150,25 +162,230 @@ flutter run -d chrome
 ### 4. Managing Subjects
 
 1. Go to **Subjects** from the sidebar
-2. View all configured subjects and their chapters
-3. Add new subjects or chapters as needed
+2. View all 4 subjects with their complete chapter lists
+3. Add custom chapters if needed
 4. Edit or delete existing entries
+
+---
+
+## 📚 Syllabus Coverage
+
+### Physics (29 Chapters)
+
+<details>
+<summary><b>Class 11 (Chapters 1-15)</b></summary>
+
+| Ch. | Topic                                   |
+| --- | --------------------------------------- |
+| 1   | Physical World                          |
+| 2   | Units and Measurements                  |
+| 3   | Motion in a Straight Line               |
+| 4   | Motion in a Plane                       |
+| 5   | Laws of Motion                          |
+| 6   | Work, Energy and Power                  |
+| 7   | System of Particles & Rotational Motion |
+| 8   | Gravitation                             |
+| 9   | Mechanical Properties of Solids         |
+| 10  | Mechanical Properties of Fluids         |
+| 11  | Thermal Properties of Matter            |
+| 12  | Thermodynamics                          |
+| 13  | Kinetic Theory                          |
+| 14  | Oscillations                            |
+| 15  | Waves                                   |
+
+</details>
+
+<details>
+<summary><b>Class 12 (Chapters 16-29)</b></summary>
+
+| Ch. | Topic                                   |
+| --- | --------------------------------------- |
+| 16  | Electric Charges and Fields             |
+| 17  | Electrostatic Potential and Capacitance |
+| 18  | Current Electricity                     |
+| 19  | Moving Charges and Magnetism            |
+| 20  | Magnetism and Matter                    |
+| 21  | Electromagnetic Induction               |
+| 22  | Alternating Current                     |
+| 23  | Electromagnetic Waves                   |
+| 24  | Ray Optics and Optical Instruments      |
+| 25  | Wave Optics                             |
+| 26  | Dual Nature of Radiation and Matter     |
+| 27  | Atoms                                   |
+| 28  | Nuclei                                  |
+| 29  | Semiconductor Electronics               |
+
+</details>
+
+---
+
+### Chemistry (29 Chapters)
+
+<details>
+<summary><b>Class 11 (Chapters 1-14)</b></summary>
+
+| Ch. | Topic                                    |
+| --- | ---------------------------------------- |
+| 1   | Some Basic Concepts of Chemistry         |
+| 2   | Structure of Atom                        |
+| 3   | Classification of Elements               |
+| 4   | Chemical Bonding and Molecular Structure |
+| 5   | States of Matter                         |
+| 6   | Thermodynamics                           |
+| 7   | Equilibrium                              |
+| 8   | Redox Reactions                          |
+| 9   | Hydrogen                                 |
+| 10  | s-Block Elements                         |
+| 11  | p-Block Elements (Group 13 & 14)         |
+| 12  | Organic Chemistry - Basic Principles     |
+| 13  | Hydrocarbons                             |
+| 14  | Environmental Chemistry                  |
+
+</details>
+
+<details>
+<summary><b>Class 12 (Chapters 15-29)</b></summary>
+
+| Ch. | Topic                                   |
+| --- | --------------------------------------- |
+| 15  | Solid State                             |
+| 16  | Solutions                               |
+| 17  | Electrochemistry                        |
+| 18  | Chemical Kinetics                       |
+| 19  | Surface Chemistry                       |
+| 20  | p-Block Elements (Group 15-18)          |
+| 21  | d and f Block Elements                  |
+| 22  | Coordination Compounds                  |
+| 23  | Haloalkanes and Haloarenes              |
+| 24  | Alcohols, Phenols and Ethers            |
+| 25  | Aldehydes, Ketones and Carboxylic Acids |
+| 26  | Amines                                  |
+| 27  | Biomolecules                            |
+| 28  | Polymers                                |
+| 29  | Chemistry in Everyday Life              |
+
+</details>
+
+---
+
+### Biology - NEET (38 Chapters)
+
+<details>
+<summary><b>Class 11 (Chapters 1-22)</b></summary>
+
+| Ch. | Topic                                 |
+| --- | ------------------------------------- |
+| 1   | The Living World                      |
+| 2   | Biological Classification             |
+| 3   | Plant Kingdom                         |
+| 4   | Animal Kingdom                        |
+| 5   | Morphology of Flowering Plants        |
+| 6   | Anatomy of Flowering Plants           |
+| 7   | Structural Organisation in Animals    |
+| 8   | Cell: The Unit of Life                |
+| 9   | Biomolecules                          |
+| 10  | Cell Cycle and Cell Division          |
+| 11  | Transport in Plants                   |
+| 12  | Mineral Nutrition                     |
+| 13  | Photosynthesis in Higher Plants       |
+| 14  | Respiration in Plants                 |
+| 15  | Plant Growth and Development          |
+| 16  | Digestion and Absorption              |
+| 17  | Breathing and Exchange of Gases       |
+| 18  | Body Fluids and Circulation           |
+| 19  | Excretory Products and Elimination    |
+| 20  | Locomotion and Movement               |
+| 21  | Neural Control and Coordination       |
+| 22  | Chemical Coordination and Integration |
+
+</details>
+
+<details>
+<summary><b>Class 12 (Chapters 23-38)</b></summary>
+
+| Ch. | Topic                                         |
+| --- | --------------------------------------------- |
+| 23  | Reproduction in Organisms                     |
+| 24  | Sexual Reproduction in Flowering Plants       |
+| 25  | Human Reproduction                            |
+| 26  | Reproductive Health                           |
+| 27  | Principles of Inheritance and Variation       |
+| 28  | Molecular Basis of Inheritance                |
+| 29  | Evolution                                     |
+| 30  | Human Health and Disease                      |
+| 31  | Strategies for Enhancement in Food Production |
+| 32  | Microbes in Human Welfare                     |
+| 33  | Biotechnology: Principles and Processes       |
+| 34  | Biotechnology and its Applications            |
+| 35  | Organisms and Populations                     |
+| 36  | Ecosystem                                     |
+| 37  | Biodiversity and Conservation                 |
+| 38  | Environmental Issues                          |
+
+</details>
+
+---
+
+### Mathematics - JEE (27 Chapters)
+
+<details>
+<summary><b>Class 11 (Chapters 1-14)</b></summary>
+
+| Ch. | Topic                                   |
+| --- | --------------------------------------- |
+| 1   | Sets                                    |
+| 2   | Relations and Functions                 |
+| 3   | Trigonometric Functions                 |
+| 4   | Complex Numbers and Quadratic Equations |
+| 5   | Linear Inequalities                     |
+| 6   | Permutations and Combinations           |
+| 7   | Binomial Theorem                        |
+| 8   | Sequences and Series                    |
+| 9   | Straight Lines                          |
+| 10  | Conic Sections                          |
+| 11  | Introduction to 3D Geometry             |
+| 12  | Limits and Derivatives                  |
+| 13  | Statistics                              |
+| 14  | Probability                             |
+
+</details>
+
+<details>
+<summary><b>Class 12 (Chapters 15-27)</b></summary>
+
+| Ch. | Topic                            |
+| --- | -------------------------------- |
+| 15  | Relations and Functions II       |
+| 16  | Inverse Trigonometric Functions  |
+| 17  | Matrices                         |
+| 18  | Determinants                     |
+| 19  | Continuity and Differentiability |
+| 20  | Applications of Derivatives      |
+| 21  | Integrals                        |
+| 22  | Applications of Integrals        |
+| 23  | Differential Equations           |
+| 24  | Vector Algebra                   |
+| 25  | Three Dimensional Geometry       |
+| 26  | Linear Programming               |
+| 27  | Probability II                   |
+
+</details>
 
 ---
 
 ## 🛠 Tech Stack
 
-| Technology            | Purpose                      |
-| --------------------- | ---------------------------- |
-| **Flutter**           | Cross-platform UI framework  |
-| **Dart**              | Programming language         |
-| **Hive**              | Local NoSQL database         |
-| **Provider**          | State management             |
-| **flutter_math_fork** | LaTeX rendering              |
-| **pdf**               | PDF document generation      |
-| **printing**          | PDF preview and printing     |
-| **google_fonts**      | Typography enhancement       |
-| **uuid**              | Unique identifier generation |
+| Technology            | Purpose                       |
+| --------------------- | ----------------------------- |
+| **Flutter**           | Cross-platform UI framework   |
+| **Dart**              | Programming language          |
+| **Hive**              | Local NoSQL database          |
+| **Provider**          | State management              |
+| **flutter_math_fork** | LaTeX rendering for equations |
+| **pdf**               | PDF document generation       |
+| **printing**          | PDF preview and printing      |
+| **google_fonts**      | Typography enhancement        |
+| **uuid**              | Unique identifier generation  |
 
 ---
 
@@ -203,45 +420,50 @@ lib/
 
 ---
 
-## 🎯 Default Subjects & Chapters
+## 🔧 Exam Patterns
 
-The application comes pre-configured with the following subjects:
+### NEET Pattern
 
-| Subject         | Chapters                                                                                                                                                     |
-| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Mathematics** | Real Numbers, Polynomials, Linear Equations, Quadratic Equations, Arithmetic Progressions, Triangles, Coordinate Geometry, Trigonometry, Circles, Statistics |
-| **Physics**     | Physical World, Units and Measurements, Motion in a Straight Line, Motion in a Plane, Laws of Motion, Work Energy Power, Gravitation, Mechanical Properties  |
-| **Chemistry**   | Chemical Reactions, Acids Bases and Salts, Metals and Non-metals, Carbon Compounds, Periodic Classification                                                  |
-| **Biology**     | Life Processes, Control and Coordination, Reproduction, Heredity and Evolution, Environment                                                                  |
+| Section   | Questions | Marks per Q | Negative Marking |
+| --------- | --------- | ----------- | ---------------- |
+| Physics   | 45        | 4           | -1               |
+| Chemistry | 45        | 4           | -1               |
+| Biology   | 90        | 4           | -1               |
+| **Total** | **180**   |             | **720 marks**    |
+
+### JEE Main Pattern
+
+| Section                 | Questions | Marks per Q | Negative Marking |
+| ----------------------- | --------- | ----------- | ---------------- |
+| Physics (MCQ)           | 20        | 4           | -1               |
+| Physics (Numerical)     | 5         | 4           | 0                |
+| Chemistry (MCQ)         | 20        | 4           | -1               |
+| Chemistry (Numerical)   | 5         | 4           | 0                |
+| Mathematics (MCQ)       | 20        | 4           | -1               |
+| Mathematics (Numerical) | 5         | 4           | 0                |
+| **Total**               | **75**    |             | **300 marks**    |
 
 ---
 
-## 🔧 Configuration
+## 🔧 LaTeX Support
 
-### LaTeX Support
+QGen supports LaTeX notation for mathematical expressions and chemical equations:
 
-QGen supports LaTeX notation for mathematical expressions. Use `$...$` for inline math:
+### Examples
 
+```latex
+# Quadratic Formula
+$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$
+
+# Chemical Equation
+$2H_2 + O_2 \rightarrow 2H_2O$
+
+# Integration
+$\int_{0}^{\infty} e^{-x^2} dx = \frac{\sqrt{\pi}}{2}$
+
+# Vector Notation
+$\vec{F} = m\vec{a}$
 ```
-What is the value of $x$ in the equation $x^2 + 5x + 6 = 0$?
-```
-
-### Question Types
-
-| Type             | Description                                |
-| ---------------- | ------------------------------------------ |
-| `MCQ`            | Multiple Choice Questions with 2-6 options |
-| `Short Answer`   | Brief answers (2-3 lines)                  |
-| `Long Answer`    | Detailed explanations                      |
-| `Fill in Blanks` | Complete the sentence questions            |
-
-### Difficulty Levels
-
-| Level  | Recommended Marks |
-| ------ | ----------------- |
-| Easy   | 1-2 marks         |
-| Medium | 3-4 marks         |
-| Hard   | 5+ marks          |
 
 ---
 
@@ -281,14 +503,14 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🙏 Acknowledgments
 
 - Flutter team for the amazing framework
-- Contributors to the open-source packages used in this project
-- All educators who inspired the creation of this tool
+- NCERT for the official syllabus structure
+- All educators and students who inspired this tool
 
 ---
 
 <div align="center">
 
-**Made with ❤️ for Educators**
+**Made with ❤️ for NEET/JEE Aspirants**
 
 If you find this project helpful, please consider giving it a ⭐
 

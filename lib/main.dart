@@ -30,7 +30,7 @@ class QuestionPaperApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Carbon Gurukulam - Question Paper Generator',
+      title: 'QGen - NEET/JEE Question Bank',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.darkTheme,
       home: const AppShell(),
