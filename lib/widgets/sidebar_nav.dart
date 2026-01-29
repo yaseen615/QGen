@@ -95,7 +95,7 @@ class SidebarNav extends StatelessWidget {
               borderRadius: BorderRadius.circular(10),
             ),
             child: const Icon(
-              Icons.school_rounded,
+              Icons.quiz_rounded,
               color: Colors.white,
               size: 24,
             ),
@@ -107,13 +107,13 @@ class SidebarNav extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Carbon',
+                    'QGen',
                     style: Theme.of(context).textTheme.titleLarge?.copyWith(
                       fontWeight: FontWeight.bold,
                     ),
                   ),
                   Text(
-                    'Gurukulam',
+                    'NEET/JEE Question Bank',
                     style: Theme.of(
                       context,
                     ).textTheme.bodySmall?.copyWith(color: AppColors.primary),
